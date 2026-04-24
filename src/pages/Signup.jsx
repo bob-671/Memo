@@ -1,5 +1,10 @@
+import { useState } from "react";
 
 function Signup(){
+
+    const handleSubmit =(e) =>{
+        
+    }
     return(
         <form action="/" className="Signf">
             <input type="text" placeholder='first name' />

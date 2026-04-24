@@ -1,6 +1,6 @@
 import Footer from '../components/Footer.jsx';
 import Nav from '../components/Nav.jsx';
-
+import Plan from '../components/Plan.jsx';
 function Home() {
   return (
     <>
@@ -14,8 +14,57 @@ function Home() {
         <p className='welcomP'>
           AI-powered calorie tracking and personalized nutrition plans.
         </p>
-      </section>
+      </section >
 
+          <section id="pricing" className="plans-container">
+
+      <h1 className="title">
+        Simple, Transparent <span>Pricing</span>
+      </h1>
+
+      <div className="plans">
+
+        <Plan
+          name="Monthly"
+          price={29}
+          duration="month"
+          features={[
+            "AI Calorie Tracking",
+            "Basic Meal Plans",
+            "Community Access",
+            "Weekly Reports"
+          ]}
+        />
+
+        <Plan
+          name="Seasonal"
+          price={69}
+          duration="3 months"
+          popular={true}
+          features={[
+            "Everything in Monthly",
+            "1 Nutritionist Session",
+            "Custom Meal Plans",
+            "Priority Support",
+            "Advanced Analytics"
+          ]}
+        />
+
+        <Plan
+          name="Ramadan Special"
+          price={49}
+          duration="month"
+          features={[
+            "Iftar & Suhoor Plans",
+            "Fasting Nutrition Guide",
+            "AI Tracking",
+            "Daily Tips",
+            "Community Group"
+          ]}
+        />
+
+      </div>
+    </section>
       <Footer />
     </>
   );
