@@ -6,9 +6,9 @@ function Login(){
             <br />
             <input type="password" placeholder="Enter your password" />
             <br />
-            <Button name="Login" type="default" link="/Login.jsx"></Button>
+            <Button name="Login" type="default" link="/User"></Button>
             <p>don't have an account</p>
-            <Button name="Sign up" type="secondary" link="/Login.jsx"></Button>
+            <Button name="Sign up" type="secondary" link="/Signup"></Button>
         </form>
   );
 }
